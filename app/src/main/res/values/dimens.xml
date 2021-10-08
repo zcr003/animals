@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <!-- this is where you can toggle spacing without having to mess with lines of code -->
+  <dimen name="half_static_spacing">8dp</dimen>
+</resources>
