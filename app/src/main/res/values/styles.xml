@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
- //this describes the style itself
+
+  //this describes the style itself
   <style name="AnimalSpinner" parent="TextAppearance.AppCompat.Widget.TextView.SpinnerItem">
-  //this is what we put inside the style
+
+    //this is what we put inside the style
     <item name="android:textColor">?android:attr/colorAccent</item>
   </style>
 </resources>

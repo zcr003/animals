@@ -39,10 +39,13 @@ public class MainActivity extends AppCompatActivity {
           Log.d(getClass().getName(), response.body().toString());
           List<Animal> animals = response.body();
           runOnUiThread(new Runnable() {
+
+            //Making use of the spinner
             @Override
             public void run() {
               adapter = new ArrayAdapter<>(
-                  MainActivity.this, android.R.layout.simple_spinner_item, animals);
+                  MainActivity.this, R.layout.item_animal_spinner, animals);
+              adapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
               animalSelector.setAdapter(adapter);
             }
           });
